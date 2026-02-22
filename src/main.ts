@@ -191,6 +191,10 @@ closeRevenue.addEventListener('click', () => {
 })
 
 // Final Conversion
+const conversionStage = new CinematicStage('conversion-canvas', 41, `${BASE_URL}sequences/hero/ezgif-frame-###.jpg`)
+conversionStage.currentFrame = 0
+conversionStage.preload()
+
 gsap.from('.conversion .reveal-text', {
     opacity: 0,
     y: 30,
