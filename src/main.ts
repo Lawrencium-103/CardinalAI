@@ -20,7 +20,8 @@ function raf(time: number) {
 requestAnimationFrame(raf)
 
 // --- Hero Cinematic Engine ---
-const heroStage = new CinematicStage('hero-canvas', 41, '/sequences/hero/ezgif-frame-###.jpg')
+const BASE_URL = import.meta.env.BASE_URL || '/'
+const heroStage = new CinematicStage('hero-canvas', 41, `${BASE_URL}sequences/hero/ezgif-frame-###.jpg`)
 const preloader = document.querySelector('.preloader')!
 
 heroStage.preload().then(() => {
@@ -151,7 +152,7 @@ ScrollTrigger.batch('.testimonial-card', {
 
 // --- Sovereign Pulse Transition ---
 const sweepCanvas = document.querySelector('.sweep-canvas') as HTMLCanvasElement
-const sweepStage = new CinematicStage('revenue-sweep-canvas', 26, '/sequences/infrastructure/ezgif-frame-###.jpg')
+const sweepStage = new CinematicStage('revenue-sweep-canvas', 26, `${BASE_URL}sequences/infrastructure/ezgif-frame-###.jpg`)
 const triggerBtn = document.getElementById('trigger-infrastructure')!
 const revenueControls = document.querySelector('.revenue-controls')!
 const closeRevenue = document.getElementById('close-revenue')!
