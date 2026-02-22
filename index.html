@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cardinal | The GTM System</title>
+  <meta name="description"
+    content="Cardinal is the AI platform for precision outbound. Build custom outbound around your team with a real engine." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@800&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <!-- Cardinal Pulse Preloader -->
+  <div class="preloader">
+    <div class="loader-content">
+      <div class="pulse-ring"></div>
+      <div class="loader-logo">CARDINAL</div>
+    </div>
+  </div>
+
+  <div id="app">
+    <nav class="navbar">
+      <div class="logo">CARDINAL</div>
+      <div class="nav-links">
+        <a href="https://tally.so/r/5BzXOo" class="btn btn-primary">Founder's Call</a>
+      </div>
+    </nav>
+
+    <main>
+      <!-- High-Impact Hero Stage -->
+      <section class="cinematic-stage">
+        <canvas id="hero-canvas"></canvas>
+        <canvas id="revenue-sweep-canvas" class="sweep-canvas"></canvas>
+
+        <!-- Interactive Revenue Controls -->
+        <div class="revenue-controls">
+          <a href="https://tally.so/r/5BzXOo" class="btn btn-primary demo-btn">Book Demo Now</a>
+          <button class="escape-btn" id="close-revenue" aria-label="Escape Transition">&times;</button>
+        </div>
+
+        <div class="story-overlay">
+          <div class="story-step" data-frame="0">
+            <h1 class="split-reveal">PROSPECT<br>DISCOVERED.</h1>
+            <p class="fade-up">Elite Signals. High-Density Pipeline.</p>
+          </div>
+          <div class="story-step" data-frame="20">
+            <h1 class="split-reveal highlight">DEAL<br>SECURED.</h1>
+            <p class="fade-up">Precision Capture. Zero Friction Velocity.</p>
+          </div>
+          <div class="story-step" data-frame="40">
+            <h1 class="split-reveal highlight-alt">LEAD<br>INBOUND.</h1>
+            <p class="fade-up">The Pulse Engine. Automated Alpha.</p>
+            <button class="btn btn-secondary reveal-btn" id="trigger-infrastructure">Transform Leads into
+              Revenue</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Partner Section -->
+      <section class="partners-bar">
+        <div class="container">
+          <div class="partners-grid">
+            <span>Ordinal</span>
+            <span>Henry</span>
+            <span>Mintlify</span>
+            <span class="highlight">Luminal</span>
+            <span>Greptile</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Precision Outbound Logic -->
+      <section class="precision-intro">
+        <div class="container side-layout">
+          <h2 class="reveal-text">The AI Platform for<br><span>Precision Outbound.</span></h2>
+          <p class="body-text">Custom outbound built around your team. We work with fast-growing teams who want outbound
+            to function like a real engine—not a collection of disconnected tools and experiments.</p>
+        </div>
+      </section>
+
+      <!-- Success Grid: Social Proof -->
+      <section class="testimonials">
+        <div class="container">
+          <p class="section-tagline">What our customers are saying</p>
+          <div class="testimonial-grid">
+            <div class="testimonial-card">
+              <p class="quote">"Working with Cardinal feels like having an elite outbound team sitting right in your
+                Slack."</p>
+              <div class="author">
+                <p class="name">Samuel Akinwunmi</p>
+                <p class="title">Co-Founder, Bilanc</p>
+              </div>
+            </div>
+            <div class="testimonial-card featured">
+              <p class="quote">"Cardinal transformed our business! We met them during the YC batch, and setting up
+                outbound with them immediately helped us talk to tons of customers, book over $70,000 in revenue."</p>
+              <div class="author">
+                <p class="name">Abdullah Nauman</p>
+                <p class="title">Co-Founder, Claybird</p>
+              </div>
+            </div>
+            <div class="testimonial-card">
+              <p class="quote">"Easily the best outbound automation I've used."</p>
+              <div class="author">
+                <p class="name">Casey Spencer</p>
+                <p class="title">Co-Founder, Voxel Energy</p>
+              </div>
+            </div>
+            <div class="testimonial-card">
+              <p class="quote">"Devi and Jianna have built a tool that allows me to snipe the perfect contact at an
+                enterprise in just a few minutes."</p>
+              <div class="author">
+                <p class="name">Jack Chapman</p>
+                <p class="title">Founder, Cardinal gray</p>
+              </div>
+            </div>
+            <div class="testimonial-card">
+              <p class="quote">"We've launched precise outbound sequences that would have taken us 10 tools and an
+                engineer to do without Cardinal."</p>
+              <div class="author">
+                <p class="name">Han Wang</p>
+                <p class="title">Co-Founder, Mintlify</p>
+              </div>
+            </div>
+            <div class="testimonial-card large">
+              <p class="quote">"Cardinal is literally game changing. The product is built for founder led sales, is far
+                more straightforward than any other option, and yet is as powerful as a whole suite of 7 tools."</p>
+              <div class="author">
+                <p class="name">Michael Silver</p>
+                <p class="title">Co-Founder, Kaizen</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="conversion">
+        <div class="container">
+          <p class="body-text centered">Take your outbound to new heights.</p>
+          <h2 class="reveal-text highlight large">Book a Demo</h2>
+          <a href="https://tally.so/r/5BzXOo" class="btn btn-large">SECURE YOUR SPOT</a>
+        </div>
+      </section>
+
+      <footer class="main-footer">
+        <div class="container">
+          <div class="footer-bottom">
+            <p>© 2026 Cardinal. All rights reserved.</p>
+            <p>Brand and web design by <span class="credit">Lawrence.</span></p>
+            <p>team@trycardinal.ai</p>
+          </div>
+        </div>
+      </footer>
+    </main>
+  </div>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>
