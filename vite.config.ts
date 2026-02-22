@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite'
 
 export default defineConfig({
-    base: '/CardinalAI/',
+    base: '/',
     build: {
         outDir: 'dist',
     }
